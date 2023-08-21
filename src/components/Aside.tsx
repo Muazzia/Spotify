@@ -21,7 +21,7 @@ const Aside = () => {
     []
   );
   return (
-    <aside className="space-y-1 hidden sm:flex flex-col ">
+    <aside className="space-y-2 hidden sm:flex flex-col ">
       <Sidebar className="space-y-2 py-3 ">
         {routes.map((r, i) => (
           <SidebarItem key={i}>
