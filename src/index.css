@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* height: 100%; */
+  color-scheme: dark;
+}
+
+body {
+  background-color: black;
+}
