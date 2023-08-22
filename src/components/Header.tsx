@@ -1,6 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "./Button";
-import like from "../../public/images/liked.png";
+import like from "/public/images/liked.png";
 import { FiPlay } from "react-icons/fi";
 
 const Header = () => {
@@ -15,8 +15,8 @@ const Header = () => {
 function Top() {
   const iconsClass = "bg-black text-white rounded-full p-1";
   return (
-    <div className="flex justify-between items-center">
-      <div className="flex gap-2">
+    <nav className="flex justify-between items-center">
+      <div className=" gap-2 hidden sm:flex">
         <button className={iconsClass}>
           <IoIosArrowBack size={"1.5rem"} />
         </button>
@@ -30,7 +30,7 @@ function Top() {
           Login
         </Button>
       </div>
-    </div>
+    </nav>
   );
 }
 
@@ -42,7 +42,7 @@ function Bottom() {
         <div className="w-1/4 h-full">
           <img src={like} className="w-full h-full object-cover" />
         </div>
-        <div className="text-sm">Liked Songs</div>
+        <div className="text-sm cursor-default">Liked Songs</div>
         <button className="absolute right-3 hidden group-hover:flex bg-emerald-700 p-2 rounded-full items-center justify-center">
           <FiPlay />
         </button>
