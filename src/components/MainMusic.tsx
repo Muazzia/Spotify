@@ -1,4 +1,5 @@
 import m from "../assets/all_of_me_image.jpg";
+import PlayButton from "./PlayButton";
 
 const MainMusic = () => {
   return (
@@ -6,11 +7,14 @@ const MainMusic = () => {
       <img
         src={m}
         alt=""
-        className="h-[120px] w-[120px] lg:w-[160px] lg:h-[160px]  rounded-sm"
+        className="h-[120px] w-[120px] lg:w-[180px] lg:h-[160px]  rounded-sm"
       />
-      <div className="mt-2">
-        <p className="text-sm">All of Me</p>
-        <p className="text-xs text-white/70">By Muaz</p>
+      <div className="mt-2 group relative items-center justify-between flex ">
+        <div>
+          <p className="text-sm cursor-default">All of Me</p>
+          <p className="text-xs text-white/70 cursor-default">By Muaz</p>
+        </div>
+        <PlayButton className="h-8 w-8 hidden group-hover:block" />
       </div>
     </section>
   );
