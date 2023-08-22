@@ -3,6 +3,7 @@ import { AiOutlineHome, AiOutlinePlus } from "react-icons/ai";
 import { BiSearchAlt2 } from "react-icons/bi";
 import Sidebar from "./Sidebar";
 import SidebarItem from "./SidebarItem";
+import SideBarMusic from "./SideBarMusic";
 
 const Aside = () => {
   const routes = useMemo(
@@ -36,6 +37,9 @@ const Aside = () => {
           <AiOutlinePlus size="1.1rem" />
         </div>
         <p className="text-xs mt-2 text-neutral-200">List of Songs</p>
+        <div>
+          <SideBarMusic />
+        </div>
       </Sidebar>
     </aside>
   );
