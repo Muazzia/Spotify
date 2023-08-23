@@ -1,6 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "./Button";
-import like from "/public/images/liked.png";
+import like from "../assets/images/liked.png";
 import { FiPlay } from "react-icons/fi";
 
 const Header = () => {
