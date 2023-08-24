@@ -35,9 +35,9 @@ const useFetchMusic = () => {
 
     fetch();
 
-    return () => {
-      cancelToken.cancel("Unmount");
-    };
+    // return () => {
+    //   cancelToken.cancel("Unmount");
+    // };
   }, []);
 
   return { data, err, loading };
