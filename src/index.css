@@ -17,3 +17,8 @@ body,
 body {
   background-color: black;
 }
+
+.rhap_play-status--paused .rhap_progress-bar {
+  /* // Overwrite the progress bar style while the audio is paused */
+  background-color: red;
+}

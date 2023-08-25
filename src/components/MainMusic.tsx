@@ -1,3 +1,4 @@
+import store from "@/store";
 import { Music } from "../hooks/useFetechMusic";
 import PlayButton from "./PlayButton";
 
@@ -7,6 +8,7 @@ interface Props {
 
 const MainMusic = ({ data }: Props) => {
   const song = new Audio(`http://localhost:3000/${data.fileReference}`);
+  const setSongId = store((s) => s.setSongId);
   return (
     <section className="bg-neutral-800 w-fit p-2 rounded-sm">
       <img
@@ -20,7 +22,9 @@ const MainMusic = ({ data }: Props) => {
           <p className="text-xs text-white/70 cursor-default">{data.artist}</p>
         </div>
         <PlayButton
-          onClick={() => song.play()}
+          onClick={() => {
+            setSongId(data.fileReference);
+          }}
           className="h-8 w-8 hidden group-hover:block"
         />
       </div>
