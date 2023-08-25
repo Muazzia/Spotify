@@ -5,10 +5,9 @@ import { Skeleton } from "./ui/skeleton";
 
 const Main = () => {
   const { data, loading } = useFetchMusic();
-  console.log(loading);
-
+  // audio player bnana ha
   return (
-    <main className="bg-neutral-900 ">
+    <main className="bg-neutral-900 min-h-[95vh]">
       <Header />
       <div className="p-2">
         <p>Newest Songs</p>

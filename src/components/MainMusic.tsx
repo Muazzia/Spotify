@@ -6,6 +6,7 @@ interface Props {
 }
 
 const MainMusic = ({ data }: Props) => {
+  const song = new Audio(`http://localhost:3000/${data.fileReference}`);
   return (
     <section className="bg-neutral-800 w-fit p-2 rounded-sm">
       <img
@@ -18,7 +19,10 @@ const MainMusic = ({ data }: Props) => {
           <p className="text-sm cursor-default">{data.title}</p>
           <p className="text-xs text-white/70 cursor-default">{data.artist}</p>
         </div>
-        <PlayButton className="h-8 w-8 hidden group-hover:block" />
+        <PlayButton
+          onClick={() => song.play()}
+          className="h-8 w-8 hidden group-hover:block"
+        />
       </div>
     </section>
   );
