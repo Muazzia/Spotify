@@ -18,17 +18,14 @@ function App() {
       </div>
       {songId && (
         <div
-          className="fixed bottom-0 bg-zinc-800
-        left-[50%] -translate-x-[50%] w-[95vw] px-2 "
+          className="absolute bottom-0 bg-zinc-800
+        left-[50%] -translate-x-[50%] w-[95vw] md:w-[97vw] lg:w-[98vw] px-2 "
         >
           <AudioPlayer songName={songId} />
         </div>
       )}
     </div>
   );
-}
-
-{
 }
 
 export default App;

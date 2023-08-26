@@ -88,8 +88,8 @@ const AudioPlayer = ({ songName }: Props) => {
         />
         {isPlaying ? (
           <AiOutlinePause
-            className={"cursor-pointer"}
-            size={22}
+            className={"cursor-pointer p-2 rounded-full bg-neutral-700"}
+            size={32}
             onClick={handleToggle}
           />
         ) : (
