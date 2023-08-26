@@ -7,7 +7,6 @@ interface Props {
 }
 
 const MainMusic = ({ data }: Props) => {
-  const song = new Audio(`http://localhost:3000/${data.fileReference}`);
   const setSongId = store((s) => s.setSongId);
   return (
     <section className="bg-neutral-800 w-fit p-2 rounded-sm">

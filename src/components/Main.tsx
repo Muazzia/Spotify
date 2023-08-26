@@ -13,7 +13,11 @@ const Main = () => {
         <p>Newest Songs</p>
         <p className="text-sm text-neutral-300">List of Songs</p>
       </div>
-      <div className="p-2 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center gap-y-4 gap-x-2">
+      <div
+        className="p-2 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center gap-y-4 gap-x-2
+      mb-[120px]
+      "
+      >
         {loading
           ? Array(5)
               .fill(1)
