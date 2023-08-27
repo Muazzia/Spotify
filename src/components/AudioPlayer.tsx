@@ -81,25 +81,22 @@ const AudioPlayer = ({ songName }: Props) => {
         className="hidden"
       />
       <div className="flex items-center justify-center gap-3">
-        <AiFillBackward
-          size={22}
-          onClick={() => handleSkip(-5)}
-          className={"cursor-pointer"}
-        />
+        <button tabIndex={0} onClick={() => handleSkip(-5)}>
+          <AiFillBackward size={22} />
+        </button>
         {isPlaying ? (
-          <AiOutlinePause
-            className={"cursor-pointer p-2 rounded-full bg-neutral-700"}
-            size={32}
+          <button
             onClick={handleToggle}
-          />
+            className={"p-2 rounded-full bg-neutral-700"}
+          >
+            <AiOutlinePause />
+          </button>
         ) : (
           <PlayButton onClick={handleToggle} />
         )}
-        <AiFillForward
-          size={22}
-          onClick={() => handleSkip(5)}
-          className={"cursor-pointer"}
-        />
+        <button onClick={() => handleSkip(5)}>
+          <AiFillForward size={22} />
+        </button>
       </div>
       <div className="flex items-center gap-3">
         <p className="text-md text-zinc-200">

@@ -16,7 +16,7 @@ const Main = () => {
       </div>
       <div
         className="p-2 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center gap-y-4 gap-x-2
-      mb-[120px]
+      mb-[100px]
       "
       >
         {loading
